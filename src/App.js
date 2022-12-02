@@ -1,16 +1,6 @@
-import Header from './components/Header';
-import React, {useState} from 'react';
-import './App.css';
+import React from "react";
+import MainPageContainer from "./components/MainPageContainer";
 
-function App() {
-  const [currentPage, setCurrentPage] = useState('About');
-
-  return (
-    <div className="App">
-
-      <Header setCurrentPage= {setCurrentPage}/>
-    </div>
-  );
-}
+const App = () => <MainPageContainer />;
 
 export default App;
