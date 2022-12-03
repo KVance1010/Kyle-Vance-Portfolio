@@ -4,7 +4,7 @@ import Nav from './Nav';
 function Header({ currentPage, handlePageChange }){
 return (
     <header className="header">
-        <p className="">Kyle Vance</p>
+        <a className="logo_container" onClick={() => handlePageChange('Home')} href='#home'>Kyle Vance</a>
         <Nav currentPage={currentPage} handlePageChange = {handlePageChange}/>
     </header>
 )

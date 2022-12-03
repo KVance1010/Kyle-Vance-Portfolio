@@ -1,5 +1,6 @@
 import React from "react";
-import MainPageContainer from "./components/MainPageContainer";
+import MainPageContainer from "./MainPageContainer";
+import './App.css';
 
 const App = () => <MainPageContainer />;
 

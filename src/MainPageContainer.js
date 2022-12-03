@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Header from './Header';
+import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-import Projects from './pages/Projects';
+import Portfolio from './pages/Portfolio';
 
-export default function mainPageContainer() {
+export default function MainPageContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
   const renderPage = () => {
     if (currentPage === 'Home') {
@@ -19,7 +19,7 @@ export default function mainPageContainer() {
       return <Resume />;
     }
     if (currentPage === 'Projects') {
-      return <Projects />;
+      return <Portfolio />;
     }
     return <Contact />;
   };

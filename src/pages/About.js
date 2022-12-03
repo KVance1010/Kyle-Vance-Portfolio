@@ -1,9 +1,10 @@
 import React from 'react';
+import me from '../images/kyle-vance.jpg'
 
 export default function About() {
   return (
-    <section id="aboutMe">
-      <img src="./assets/images/kyle-vance.jpg" alt="a face picture of Kyle Vance" />
+    <section className="aboutMe">
+      <img src={me} alt="a face picture of Kyle Vance" />
       <div class="about_me_content">
         <h2>About Me</h2>
         <p>
@@ -54,8 +55,3 @@ export default function About() {
   );
 }
 
-
-
-{/* <a email="vanceofalifetime@protonmail.com">Email</a>
-<a href="www.linkedin.com/in/kyle-s-vance">LinkedIn</a>
-<a href="https://github.com/KVance1010">GitHub</a>  */}
