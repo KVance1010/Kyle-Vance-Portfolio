@@ -1,5 +1,6 @@
 import React from 'react';
-import me from '../images/kyle-vance.jpg'
+import me from '../assets/kyle-vance.jpg';
+import '../styles/About.css';
 
 export default function About() {
   return (

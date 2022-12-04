@@ -1,0 +1,31 @@
+/* Start About Me Section */
+.aboutMe {
+	background-color: var(--second-background-color);
+	display: flex;
+}
+.aboutMe img {
+	margin: var(--outside-padding);
+	max-width: 20%;
+	border-radius: 0.5rem;
+}
+.about_me_content {
+	display: inline-block;
+	margin: var(--outside-padding);
+	color: var(--header-footer-color);
+	font-size: large;
+}
+.aboutMe h4 {
+	margin: 10px 0px;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.about_me_content h2 {
+	font-size: xxx-large;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+.aboutMe ul{
+	margin-bottom: 10px;
+}
+/* End About Me Section */

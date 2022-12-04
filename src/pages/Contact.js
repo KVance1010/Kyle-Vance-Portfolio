@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { checkPhoneNumber, validateEmail } from '../utils/helpers';
-
+import contactImg from '../assets/contact-img-sq.jpg';
+import '../styles/Contact.css';
 
 export default function Contact() {
 	const [email, setEmail] = useState('');
@@ -48,69 +49,75 @@ export default function Contact() {
 	};
 
 	return (
-		<section id="contactMe" class="contactMe">
-			<form class="contact_box" action="#" method="post">
+		<section className="contactMe" class="contactMe">
+			<form className="contact_box" method="post">
 				<h2>Contact Me</h2>
-				<div class="input_group">
-					<label for="userName">Name</label>
-					<input
-						value={userName}
-						name="userName"
-						onChange={handleInputChange}
-						type="text"
-						placeholder="Full Name"
-						className="name"
-					/>
+				<div className="input_group">
+					<label className="label">
+						Name
+						<input
+							value={userName}
+							name="userName"
+							onChange={handleInputChange}
+							type="text"
+							placeholder="Full Name"
+							className="name"
+						/>
+					</label>
 				</div>
 				<div className="input_group">
-					<label for="phoneNumber" class="phone">
+					<label className="label">
 						Phone Number
+						<input
+							name="phoneNumber"
+							type="text"
+							onChange={handleInputChange}
+							class="phone"
+							placeholder="xxx-xxx-xxxx"
+						/>
 					</label>
-					<input
-						name="phoneNumber"
-						type="text"
-						onChange={handleInputChange}
-						class="phone"
-						placeholder="xxx-xxx-xxxx"
-					/>
 				</div>
-				<div class="input_group">
-					<label for="email" class="email">
+				<div className="input_group">
+					<label className="label">
 						Email
+						<input
+							value={email}
+							name="email"
+							onChange={handleInputChange}
+							type="email"
+							placeholder="email"
+							className="email"
+						/>
 					</label>
-					<input
-						value={email}
-						name="email"
-						onChange={handleInputChange}
-						type="email"
-						placeholder="email"
-						className="email"
-					></input>
 				</div>
-				<div class="input_group">
-					<label for="project" class="project">
+				<div className="input_group">
+					<label className="label">
 						Project
+						<textarea
+							name="project"
+							value={project}
+							onChange={handleInputChange}
+							className=""
+							placeholder="Please give a brief description of the project and the best time to contact you."
+						></textarea>
 					</label>
-					<textarea
-						name="project"
-						onChange={handleInputChange}
-						className=""
-						placeholder="Please give a brief description of the project and the best time to contact you."
-					></textarea>
 				</div>
+				{errorMessage && (
+					<div>
+						<p className="error-text">{errorMessage}</p>
+					</div>
+				)}
 				<button type="button" onClick={handleContactSubmit}>
 					Submit
 				</button>
-			</form>
-			{errorMessage && (
-				<div>
-					<p className="error-text">{errorMessage}</p>
+				<div className="aTag">
+					Reach me by email at{' '}
+					<a className="aTag" href="mailto:kvance1010@protonmail.com">
+						kvance1010@protonmail.com
+					</a>
 				</div>
-			)}
-			<img
-				src="./assets/images/contact-img-sq.jpg"
-				alt="a black and white image of a laptop"
-			/>
+			</form>
+			<img src={contactImg} alt="a black and white image of a laptop" />
 		</section>
 	);
 }

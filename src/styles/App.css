@@ -1,0 +1,80 @@
+:root {
+	--main-background-color: #808080;
+	--header-footer-color: #542344;
+	--contrast-color: #d9d9d9;
+	--highlight-color: #bfd1e5;
+	--second-background-color: #d8bfaa;
+	--outside-padding: 5%;
+}
+
+* {
+	font-family: 'Inter', sans-serif;
+	box-sizing: border-box;
+}
+
+/* Start header section */
+.header {
+	display: flex;
+	background-color: var(--header-footer-color);
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 3% var(--outside-padding);
+}
+
+.nav_list li {
+	display: inline;
+}
+
+.nav_item {
+	margin: 10px;
+	font-size: x-large;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+	font-weight: bolder;
+	color: var(--second-background-color);
+}
+
+.logo_container {
+	color: var(--contrast-color);
+	text-decoration: none;
+	font-size: xx-large;
+	font-weight: 900;
+	transition: text-shadow 1s;
+}
+
+.logo_container:hover {
+	text-shadow: 1px 1px 5px black, 0 0 0.1em white, 0 0 0.5em white;
+	color: var(--main-background-color);
+	color: black;
+}
+/* End header section */
+
+/* This is where the footer starts */
+footer{
+	background-color: var(--header-footer-color);
+	width: 100%;
+}
+footer ul {
+	display: flex;
+	background-color: var(--header-footer-color);
+	justify-content: center;
+	color: var(--contrast-color);
+	font-size: x-large;
+}
+
+footer li {
+	text-decoration: none;
+	margin: 20px;
+	list-style-type: none;
+}
+
+.footer {
+	text-decoration: none;
+}
+.footer:hover {
+	font-weight: bolder;
+	color: var(--second-background-color);
+}

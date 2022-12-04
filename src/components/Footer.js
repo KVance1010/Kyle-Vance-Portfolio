@@ -1,20 +1,13 @@
 import React from 'react'
 
-const Footer = ({setCurrentPage}) => {
-    function handleClick(event){
-        console.log(event.target.textContent);
-        setCurrentPage(event.target.textContent); 
-    }
-
+export default function Footer() {
   return (
     <footer>
         <ul>
-            <li onClick={handleClick}>gitHub</li>
-            <li onClick={handleClick}>LinkedIn</li>
-            <li onClick={handleClick}>social media</li>
+            <li><a className ="footer" href= "https://github.com/KVance1010" target="_blank">GitHub</a></li>
+            <li><a className ="footer" href= "www.linkedin.com/in/kyle-s-vance" target="_blank">LinkedIn</a></li> 
+            {/* <li><a className ="footer"  href= "#">social media</a></li>*/}
         </ul>
     </footer>
   )
 }
-
-export default Footer
