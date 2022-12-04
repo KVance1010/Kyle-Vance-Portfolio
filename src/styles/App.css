@@ -53,7 +53,7 @@
 /* End header section */
 
 /* This is where the footer starts */
-footer{
+footer {
 	background-color: var(--header-footer-color);
 	width: 100%;
 }
@@ -77,4 +77,24 @@ footer li {
 .footer:hover {
 	font-weight: bolder;
 	color: var(--second-background-color);
+}
+
+.svgGit {
+	vertical-align: -0.125em;
+	width: 2em;
+	height: 2em;
+}
+
+.svgGit:hover {
+	fill: var(--second-background-color);
+}
+
+.svgLinkedIn {
+	vertical-align: -0.125em;
+	width: 2em;
+	height: 2em;
+}
+
+.svgLinkedIn:hover {
+	fill: var(--second-background-color);
 }

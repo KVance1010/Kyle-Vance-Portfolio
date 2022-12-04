@@ -59,7 +59,7 @@ const projects = [
 
 export default function Portfolio() {
 	return (
-		<section>
+		<section className = "portfolio">
 			<h2>My Portfolio</h2>
 			<Project projects={projects} />
 		</section>

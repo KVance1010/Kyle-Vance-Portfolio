@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Projects({projects}) {
 	return (
-		<div className = "portfolio">
+		<div className= "project_group_portfolio">
 			{ projects.map((project) => (
 				<div className="projects" key={project.id}>
 					<img src={project.image} alt={project.altText} />
