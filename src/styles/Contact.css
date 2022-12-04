@@ -95,4 +95,110 @@ textarea::placeholder {
 .aTag a:hover{
 	color:blue;
 }
-/* End Contact Information */
+
+@media screen and (max-width: 1466px) {
+	input {
+		padding: 10px 90px 2px 2px;
+		font-size: 20px;
+	}
+	input::placeholder {
+		font-size: 20px;
+	}
+	.input_group label {
+		font-size: 20px;
+	}
+	textarea {
+		padding: 16px 100px 60px 5px;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1288px) {
+	.contactMe h2 {
+		font-size: 40px;
+	}
+	.input_group {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 1048px) {
+	input {
+		padding: 5px 60px 2px 2px;
+		font-size: 16px;
+	}
+	input::placeholder {
+		font-size: 16px;
+	}
+	.input_group label {
+		font-size: 16px;
+	}
+	textarea {
+		padding: 9px 70px 40px 5px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 968px) {
+	.contactMe {
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+	}
+	.contact_box {
+		order: 2;
+	}
+	.contactMe img {
+		order: 1;
+		width: 50%;
+	}
+	input {
+		margin: 5px;
+		padding: 5px 60px 2px 2px;
+		font-size: 16px;
+	}
+	input::placeholder {
+		font-size: 16px;
+	}
+	.input_group label {
+		font-size: 16px;
+	}
+	textarea {
+		padding: 9px 70px 40px 5px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.contactMe {
+		gap: 10px;
+	}
+	.contactMe h2 {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.contactMe img {
+		width: 75%;
+	}
+	input {
+		margin: 5px;
+		padding: 5px 40px 2px 2px;
+		font-size: 16px;
+	}
+	input::placeholder {
+		font-size: 16px;
+	}
+	.input_group label {
+		font-size: 16px;
+	}
+	textarea {
+		padding: 9px 20px 20px 5px;
+		font-size: 16px;
+	}
+	.contactMe button {
+		font-size: 20px;
+		width: 30%;
+	}
+}

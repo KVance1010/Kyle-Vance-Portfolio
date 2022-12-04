@@ -28,4 +28,13 @@
 .aboutMe ul{
 	margin-bottom: 10px;
 }
-/* End About Me Section */
+
+@media screen and (max-width: 968px) {
+	#aboutMe {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#aboutMe img {
+		max-width: 50%;
+	}
+}

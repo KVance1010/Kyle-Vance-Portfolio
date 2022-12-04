@@ -32,7 +32,11 @@
 	text-decoration: none;
 }
 
-.nav-link:hover {
+.nav_link:hover {
+	font-weight: bolder;
+	color: var(--second-background-color);
+}
+.active {
 	font-weight: bolder;
 	color: var(--second-background-color);
 }
@@ -40,7 +44,7 @@
 .logo_container {
 	color: var(--contrast-color);
 	text-decoration: none;
-	font-size: xx-large;
+	font-size: xxx-large;
 	font-weight: 900;
 	transition: text-shadow 1s;
 }
@@ -97,4 +101,35 @@ footer li {
 
 .svgLinkedIn:hover {
 	fill: var(--second-background-color);
+}
+.medium {
+	font-weight: bold;
+	color: white;
+	font-size: 54px;
+}
+
+@media screen and (max-width: 744px) {
+	footer {
+		font-size: large;
+	}
+}
+
+@media screen and (max-width: 504px) {
+	.nav_item {
+		font-size: 12px;
+		margin: 0px;
+	}
+	footer {
+		font-size: small;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.nav_list li {
+		display: flex;
+	}
+	.nav_item {
+		margin-bottom: 3px;
+		font-size: 16px;
+	}
 }

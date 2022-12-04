@@ -51,4 +51,44 @@ opacity: .5;
 	font-size: 20px;
 }
 
-/* End Portfolio Section */
+@media screen and (max-width: 1466px) {
+	.project_group_portfolio {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 968px) {
+	.projects div {
+		margin-top: -10%;
+		padding: 10px;
+	}
+
+	.projects h3 {
+		font-size: 16px;
+	}
+	.projects p {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 744px) {
+	.projects div {
+		margin-top: -15%;
+	}
+}
+
+@media screen and (max-width: 504px) {
+	.projects div {
+		margin-top: -10%;
+		padding: 5px;
+	}
+
+	.projects h3 {
+		font-size: 12px;
+	}
+	.projects p {
+		margin-top: 6px;
+		font-size: 8px;
+	}
+}
