@@ -27,7 +27,7 @@
 }
 
 .nav_item {
-	margin: 10px;
+	padding: 10px;
 	font-size: x-large;
 	text-decoration: none;
 }
@@ -71,7 +71,7 @@ footer ul {
 
 footer li {
 	text-decoration: none;
-	margin: 20px;
+	padding: 20px;
 	list-style-type: none;
 }
 

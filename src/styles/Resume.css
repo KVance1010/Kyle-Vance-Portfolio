@@ -1,4 +1,75 @@
-.skill_set {
-	display: flex;
-    justify-content: space-around;
+.resume_container {
+	background-color: var(--second-background-color);
+	/* height: 75vh; */
+	padding: 60px 0px;
 }
+
+.skill_set {
+	background-color: var(--highlight-color);
+	margin: 0px 5% 60px;
+	border-radius: 1rem;
+}
+
+.skill_set h3 {
+	font-size: 30px;
+	padding: 30px;
+}
+
+.skill_list {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+.skill_li {
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+.technologies_container {
+	background-color: var(--highlight-color);
+	margin: 0px 5%;
+	border-radius: 1rem;
+}
+.technologies_container h3 {
+	font-size: 30px;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+.technologies {
+	font-size: xx-large;
+	font-weight: 500;
+}
+.technologies_li {
+	margin-left: 5%;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.download_Link {
+	background-color: var(--highlight-color);
+	margin: 60px 5% 0px;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.download_aTag {
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 20px;
+	transition: text-shadow 1s;
+}
+
+.download_aTag:hover {
+	text-shadow: 1px 1px 5px black, 0 0 0.1em rgb(5, 5, 5), 0 0 0.5em black;
+	color: var(--main-background-color);
+	color: white;
+}
+
+/* @media screen and (max-width: 900px) {
+	.skill_list {
+        flex-direction: row;
+    }
+} */

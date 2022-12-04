@@ -6,10 +6,11 @@ export default function Projects({projects}) {
 			{ projects.map((project) => (
 				<div className="projects" key={project.id}>
 					<img src={project.image} alt={project.altText} />
-					<div class="project_box">
+					<div className="project_box">
 						<h3>{project.title}</h3>
-						<p>{project.description}</p>
-						<p>{project.technology}</p>
+						{/* <p>{project.description}</p> */}
+						{/* <p>Technologies:</p> */}
+						{/* <p>{project.technology}</p> */}
 					</div>
 				</div>
 			))}

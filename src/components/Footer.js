@@ -1,15 +1,5 @@
 import React from 'react';
 
-const styles = {
-	styling: {
-		// style: 'vertical-align: -0.125em;',
-		width: '1em',
-		height: '1em',
-		// preserveAspectRatio: 'xMidYMid meet',
-		viewBox: '0 0 512 512',
-	},
-};
-
 export default function Footer() {
 	return (
 		<footer>
