@@ -11,16 +11,16 @@ export default function Contact() {
 	const [errorMessage, setErrorMessage] = useState('');
 
 	const handleKeyUp = (e) => {
-		const { target } = e;
-		const inputType = target.name;
-		const inputValue = target.value;
-		console.log("in function", inputType, inputValue);
+		const inputType = e.target.name;
+		const inputValue = e.target.value;
 		if (inputType === 'email') {
-			if(!inputValue) {setErrorMessage('Email required')}else{
+			if(!inputValue) {setErrorMessage('Email required')}
+			else{
 				setErrorMessage('');
 			}
 		} else if (inputType === 'userName') {
-			if(!inputValue) {setErrorMessage('Name required')}else{
+			if(!inputValue) {setErrorMessage('Name required')}
+			else{
 				setErrorMessage('');
 			}
 		} else if (inputType === 'phoneNumber') {
@@ -28,11 +28,10 @@ export default function Contact() {
 				setErrorMessage('');
 			}
 		} else if (inputType === 'project'){
-			if(!inputValue) {setErrorMessage('Please enter a brief message and the best time to reach you.')}else{
+			if(!inputValue) {setErrorMessage('Please enter a brief message and the best time to reach you.')}
+			else{
 				setErrorMessage('');
 			}
-		}else{
-			setErrorMessage('');
 		}
 	}
 
