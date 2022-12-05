@@ -96,7 +96,7 @@ textarea::placeholder {
 	color:blue;
 }
 
-@media screen and (max-width: 1466px) {
+@media screen and (max-width: 1288px) {
 	input {
 		padding: 10px 90px 2px 2px;
 		font-size: 20px;
@@ -113,7 +113,7 @@ textarea::placeholder {
 	}
 }
 
-@media screen and (max-width: 1288px) {
+@media screen and (max-width: 1048px) {
 	.contactMe h2 {
 		font-size: 40px;
 	}
@@ -124,7 +124,7 @@ textarea::placeholder {
 	}
 }
 
-@media screen and (max-width: 1048px) {
+@media screen and (max-width: 968px) {
 	input {
 		padding: 5px 60px 2px 2px;
 		font-size: 16px;
@@ -141,7 +141,7 @@ textarea::placeholder {
 	}
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 600px) {
 	.contactMe {
 		flex-wrap: wrap;
 		gap: 20px;

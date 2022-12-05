@@ -9,7 +9,7 @@ import Portfolio from './pages/Portfolio';
 import './styles/App.css';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
   const renderPage = () => {
     if (currentPage === 'Home') {
       return <Home />;
