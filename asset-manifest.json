@@ -1,0 +1,23 @@
+{
+  "main.css": "/static/css/main.a60fdae5.chunk.css",
+  "main.js": "/static/js/main.f9ac6a6d.chunk.js",
+  "main.js.map": "/static/js/main.f9ac6a6d.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.226d9264.chunk.js": "/static/js/2.226d9264.chunk.js",
+  "static/js/2.226d9264.chunk.js.map": "/static/js/2.226d9264.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.ce3ab9ae90bec6c687ae38964b561044.js": "/precache-manifest.ce3ab9ae90bec6c687ae38964b561044.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.a60fdae5.chunk.css.map": "/static/css/main.a60fdae5.chunk.css.map",
+  "static/media/Game-Homepage.gif": "/static/media/Game-Homepage.35671b1f.gif",
+  "static/media/JavaScripts_Quiz_Game.gif": "/static/media/JavaScripts_Quiz_Game.bbb02729.gif",
+  "static/media/Kyle_Vance.pdf": "/static/media/Kyle_Vance.ffc7f1ff.pdf",
+  "static/media/Note_Taker.gif": "/static/media/Note_Taker.acd2b23f.gif",
+  "static/media/OuiTravel.gif": "/static/media/OuiTravel.ddf2a3f9.gif",
+  "static/media/Tech-Blog.gif": "/static/media/Tech-Blog.85fe3515.gif",
+  "static/media/Weather_Dashboard.gif": "/static/media/Weather_Dashboard.f12b03e2.gif",
+  "static/media/contact-img-sq.jpg": "/static/media/contact-img-sq.18a84f41.jpg",
+  "static/media/hero.jpg": "/static/media/hero.c14ab270.jpg",
+  "static/media/kyle-vance.jpg": "/static/media/kyle-vance.48631861.jpg"
+}
