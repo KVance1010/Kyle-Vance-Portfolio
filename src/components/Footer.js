@@ -40,7 +40,7 @@ export default function Footer() {
 						</svg>
 					</a>
 				</li>
-				<li><a className ="footer medium"  href= "https://medium.com/@vanceofalifetime">M</a></li>
+				<li><a className ="footer medium"  href= "https://medium.com/@vanceofalifetime" target="_blank">M</a></li>
 			</ul>
 		</footer>
 	);

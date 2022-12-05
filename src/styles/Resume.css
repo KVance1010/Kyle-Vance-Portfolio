@@ -68,8 +68,9 @@
 	color: white;
 }
 
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 	.skill_list {
-        flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: left;
     }
-} */
+}

@@ -5,13 +5,13 @@
 	color: #f0f8ff;
 }
 
-.portfolio img {
-opacity: 1;
+/* .portfolio img {
+	opacity: 1;
 }
 
 .portfolio img:hover {
-opacity: .5;
-}
+	opacity: 0;
+} */
 
 .portfolio h2 {
 	margin-bottom: 50px;
@@ -35,7 +35,7 @@ opacity: .5;
 	border-radius: 0.5rem;
 }
 
-.projects div {
+.projects .project_box {
 	position: absolute;
 	z-index: 2;
 	background-color: var(--header-footer-color);
@@ -44,7 +44,7 @@ opacity: .5;
 	border-radius: 0px 0.5rem 0px 0.5rem;
 }
 
-.projects h3 {
+.projects .proTitle {
 	font-size: 25px;
 }
 .projects p {
@@ -52,19 +52,57 @@ opacity: .5;
 	font-size: 20px;
 }
 
+.overlay {
+	position: absolute;
+	margin-left: 0.2%;
+	width: 42%;
+	z-index: 0;
+	height: 450px;
+	margin-top: -450px;
+	border-radius: 0.5rem;
+	opacity: 0;
+	color: white;
+	background-color: #000000dd;
+}
+.overlay:hover {
+	opacity: 1;
+}
+
+.overlayText {
+	font-size: 20px;
+	padding: 10px;
+}
+
+.overlayTitle {
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.overlayLinks{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: xx-large;
+	font-weight: bold;
+}
+/* .overlayLinks:hover{
+	color:blue;
+} */
+
+
 @media screen and (max-width: 1466px) {
 	.project_group_portfolio {
 		justify-content: center;
 	}
 }
 
-@media screen and (max-width: 968px) {
-	.projects div {
-		margin-top: -10%;
+@media screen and (max-width: 1100px) {
+	.projects .project_box {
+		margin-top: -38px;
 		padding: 10px;
 	}
 
-	.projects h3 {
+	.projects .proTitle {
 		font-size: 16px;
 	}
 	.projects p {
@@ -73,19 +111,13 @@ opacity: .5;
 	}
 }
 
-@media screen and (max-width: 744px) {
-	.projects div {
-		margin-top: -15%;
-	}
-}
-
 @media screen and (max-width: 504px) {
-	.projects div {
-		margin-top: -10%;
+	.projects .project_box {
+		margin-top: -23px;
 		padding: 5px;
 	}
 
-	.projects h3 {
+	.projects .proTitle {
 		font-size: 12px;
 	}
 	.projects p {

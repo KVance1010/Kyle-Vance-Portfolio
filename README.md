@@ -1,14 +1,39 @@
 # Kyle-Vance-Portfolio
 
-## Your Task
+You’ll deploy this application to GitHub Pages. Follow the instructions in the Git Guide or consult the [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create a build that you can deploy
 
-Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies. 
+## Description
 
-You’ll deploy this application to GitHub Pages. Follow the instructions in the Git Guide or consult the [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create a build that you can deploy.
+This project is designed to showcase my work. My portfolio is a way to share my projects not only to employers or working as a freelancer but also so that I can share my work with fellow developers and collaborate on future projects.
 
-**Important:** Be sure to push your codebase to the default branch in GitHub -- NOT your built and deployed code. Ensure this happens by using the `gh-pages` branch to host the deployed application's build.
+---
+
+### Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [User-Story](#user-story)
+- [Acceptance-Criteria](#acceptance-criteria)
+- [Screenshots](#screenshots)
+- [CodeSnippets](#codeSnippets)
+- [License](#license)
+- [Contributors](#contributors)
+- [Tests](#tests)
+- [Important-Information-Questions](#important-information-questions)
+
+---
+
+## Technologies
+
+- **React**
+- **CSS**
+- **JavaScript**
+- **GitHub**
+
+---
 
 ## User Story
 
@@ -48,105 +73,102 @@ WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
 
-## Mock-Up
+## Screenshots
 
-The following animation shows the web application's appearance and functionality:
+#### AboutMe Page
 
-![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./Assets/20-react-challenge-demo-01.gif)
+![About Page](./src/assets/aboutMe.jpg)
 
-## Getting Started
+#### Contact Page
 
-You’ll use `create-react-app` to build your portfolio, which will include the following:
+![Contact Page](./src/assets/contact.jpg)
 
-* A single `Header` component that appears on multiple pages
+---
 
-* A single `Navigation` component within the header that will be used to conditionally render the different sections of your portfolio
+## CodeSnippets
 
-* A single `Project` component that will be used multiple times in the Portfolio section
+#### Header component
 
-* A single `Footer` component that appears on multiple pages
+```JavaScript
+function Header({ currentPage, handlePageChange }){
+    return (
+        <header className="header">
+            <a className="logo_container" onClick={() => handlePageChange('Home')} href='#home'>Kyle Vance</a>
+            <Nav currentPage={currentPage} handlePageChange = {handlePageChange}/>
+        </header>
+    )
+}
+```
 
-**Note:** Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
+#### Project cards
 
-### Projects
+```javascript
+export default function Projects({ projects }) {
+	return (
+		<div className="project_group_portfolio">
+			{projects.map((project) => (
+				<div className="projects" key={project.id}>
+					<img src={project.image} alt={project.altText} />
+					<div className="project_box">
+						<h3 className="proTitle">{project.title}</h3>
+					</div>
+					<div className="overlay">
+						<div className="overlayText">
+							<p>
+								<span className="overlayTitle">Title: </span>
+								{project.title}
+							</p>
+							<p>
+								<span className="overlayTitle">Description: </span>
+								{project.description}
+							</p>
+							<p>
+								<span className="overlayTitle">Technologies: </span>
+								{project.technology}
+							</p>
+							<div className="overlayLinks">
+								<a href={project.liveLink} target="_blank">
+									Live Link
+								</a>
+								<a href={project.gitLink} target="_blank">
+									GitHub Link
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			))}
+		</div>
+	);
+}
+```
 
-For each project that is featured in your portfolio, include the following:
+---
 
-* An image of the deployed application (either a short animated GIF or screenshot)
+## Tests
 
-* The title of the project
+N/A
 
-* A link to the deployed application
+---
 
-* A link to the corresponding GitHub repository
+## **Important-Information-Questions**
 
-### Design
+---
 
-As with the previous portfolio challenge, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
+## License
 
-* Use mobile-first design.
+The license used on this project was MIT license
 
-* Choose a color palette that distinguishes your site from the default Bootstrap theme and unstyled HTML sites. Refer to resources like [Coolors](https://coolors.co/) or another color scheme generator to help you create something that will stand out.
+[license link](https://opensource.org/licenses/MIT)
 
-* Ensure that the font size is large enough to read and that the colors don't cause eye strain.
+## Contributors
 
-* Consider using animations and React component libraries. Note that this will not affect your grade, but it might impact how potential employers gauge your knowledge.
+Kyle Vance
 
-## Grading Requirements
+## Questions
 
-This challenge is graded based on the following criteria:
+If you have any questions regarding this project, please reach me by email at vanceofalifetime@protonmail.com
 
-### Technical Acceptance Criteria: 40%
+[Live Link]()
 
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-    * Application must use React to render content.
-
-    * Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
-
-    * Application has a single `Project` component that’s used multiple times in the Portfolio section.
-
-    * Application has a single `Footer` component that appears on multiple pages.
-
-    * Application must be deployed to GitHub Pages.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains high-quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
-- - -
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+[LinkedIn](https://www.linkedin.com/in/kyle-s-vance/)

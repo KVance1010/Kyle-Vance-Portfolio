@@ -10,6 +10,32 @@ export default function Contact() {
 	const [phoneNumber, setPhoneNumber] = useState('');
 	const [errorMessage, setErrorMessage] = useState('');
 
+	const handleKeyUp = (e) => {
+		const { target } = e;
+		const inputType = target.name;
+		const inputValue = target.value;
+		console.log("in function", inputType, inputValue);
+		if (inputType === 'email') {
+			if(!inputValue) {setErrorMessage('Email required')}else{
+				setErrorMessage('');
+			}
+		} else if (inputType === 'userName') {
+			if(!inputValue) {setErrorMessage('Name required')}else{
+				setErrorMessage('');
+			}
+		} else if (inputType === 'phoneNumber') {
+			if(!inputValue) {setErrorMessage('Phone number required')}else{
+				setErrorMessage('');
+			}
+		} else if (inputType === 'project'){
+			if(!inputValue) {setErrorMessage('Please enter a brief message and the best time to reach you.')}else{
+				setErrorMessage('');
+			}
+		}else{
+			setErrorMessage('');
+		}
+	}
+
 	const handleInputChange = (e) => {
 		const { target } = e;
 		const inputType = target.name;
@@ -28,13 +54,25 @@ export default function Contact() {
 
 	const handleContactSubmit = (e) => {
 		e.preventDefault();
-		if (!validateEmail(email) || !userName) {
-			setErrorMessage('invalid Email');
+		if (!validateEmail(email)) {
+			setErrorMessage('invalid Email, please try again.');
 			return;
 		}
 		if (!checkPhoneNumber(phoneNumber)) {
 			setErrorMessage(
 				`Please enter a valid phone number. Phone numbers should be only numbers without spaces.`
+			);
+			return;
+		}
+		if (!project) {
+			setErrorMessage(
+				`Please enter a brief message and the best time to reach you.`
+			);
+			return;
+		}
+		if (!userName) {
+			setErrorMessage(
+				`Please enter your name.`
 			);
 			return;
 		}
@@ -49,8 +87,8 @@ export default function Contact() {
 	};
 
 	return (
-		<section className="contactMe" class="contactMe">
-			<form className="contact_box" method="post">
+		<section className="contactMe">
+			<form className="contact_box" action="mailto:kvance1010@protonmail.com" method="post">
 				<h2>Contact Me</h2>
 				<div className="input_group">
 					<label className="label">
@@ -62,6 +100,8 @@ export default function Contact() {
 							type="text"
 							placeholder="Full Name"
 							className="name"
+							onKeyUp={handleKeyUp}
+							onClick={handleKeyUp}
 						/>
 					</label>
 				</div>
@@ -72,8 +112,10 @@ export default function Contact() {
 							name="phoneNumber"
 							type="text"
 							onChange={handleInputChange}
-							class="phone"
+							className="phone"
 							placeholder="xxx-xxx-xxxx"
+							onKeyUp={handleKeyUp}
+							onClick={handleKeyUp}
 						/>
 					</label>
 				</div>
@@ -87,18 +129,22 @@ export default function Contact() {
 							type="email"
 							placeholder="email"
 							className="email"
+							onKeyUp={handleKeyUp}
+							onClick={handleKeyUp}
 						/>
 					</label>
 				</div>
 				<div className="input_group">
 					<label className="label">
-						Project
+						Message
 						<textarea
 							name="project"
 							value={project}
 							onChange={handleInputChange}
-							className=""
-							placeholder="Please give a brief description of the project and the best time to contact you."
+							className="project"
+							placeholder="Please give a brief description of the project, questions, or request and the best time to contact you."
+							onKeyUp={handleKeyUp}
+							onClick={handleKeyUp}
 						></textarea>
 					</label>
 				</div>
