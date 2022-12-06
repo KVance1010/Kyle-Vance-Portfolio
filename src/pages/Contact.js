@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { checkPhoneNumber, validateEmail } from '../utils/helpers';
 import contactImg from '../assets/contact-img-sq.jpg';
 import '../styles/Contact.css';
+import sWal from 'sweetalert';
 
 export default function Contact() {
 	const [email, setEmail] = useState('');
@@ -75,9 +76,8 @@ export default function Contact() {
 			);
 			return;
 		}
-		alert(
-			`Thank you for contacting me. I will respond in the next 24 hours to 48 hours to your request.`
-		);
+
+		sWal("message sent!", "Thank you for contacting me. I will respond to your message in the next 24 hours to 48 hours to your request.", "success");
 
 		setUserName('');
 		setProject('');
@@ -98,7 +98,7 @@ export default function Contact() {
 							onChange={handleInputChange}
 							type="text"
 							placeholder="Full Name"
-							className="name"
+							className="input"
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						/>
@@ -108,10 +108,11 @@ export default function Contact() {
 					<label className="label">
 						Phone Number
 						<input
+							value={phoneNumber}
 							name="phoneNumber"
 							type="text"
 							onChange={handleInputChange}
-							className="phone"
+							className="input"
 							placeholder="xxx-xxx-xxxx"
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
@@ -127,7 +128,7 @@ export default function Contact() {
 							onChange={handleInputChange}
 							type="email"
 							placeholder="email"
-							className="email"
+							className="input"
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						/>
@@ -140,7 +141,7 @@ export default function Contact() {
 							name="project"
 							value={project}
 							onChange={handleInputChange}
-							className="project"
+							className="input"
 							placeholder="Please give a brief description of the project, questions, or request and the best time to contact you."
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}

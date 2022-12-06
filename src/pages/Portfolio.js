@@ -14,7 +14,7 @@ const projects = [
 		image: game,
 		altText: 'display of the website and how to use it',
 		title: '4Play Gaming',
-		description: '4Play is fullstack web application for users that has a passion for video games. The website allows the user to create an account, check game information, create comments about the games and also, search games by game name, genres and category. Once the user select a game and click on it, we redirect the user to a page, where he will have access for more information and gallery displaying the some screenshots of the game.\n\n While developing this application, we encrypted the user password before sending it to the database, that will make the password more secure, but not only that, while the user is typing the password, the field will display it as dots, so know one can see it.',
+		description: '4Play is fullstack web application for users that has a passion for video games. The website allows the user to create an account, check game information, create comments about the games and also, search games by game name, genres and category. Once the user select a game and click on it, we redirect the user to a page, where he will have access for more information and gallery displaying the some screenshots of the game.',
 		technology: ' MySQL, CSS, bcrypt, Session-Sequelize, JavaScript, Handlebars, Node.js, GitHub, Sequelize, Express, Heroku',
 		liveLink: 'https://fp-4play.herokuapp.com/0',
 		gitLink: 'https://github.com/KVance1010/Gameproject',

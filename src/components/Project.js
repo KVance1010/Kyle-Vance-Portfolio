@@ -15,8 +15,8 @@ export default function Projects({ projects }) {
 							<p><span className="overlayTitle">Description: </span>{project.description}</p>
 							<p><span className="overlayTitle">Technologies: </span>{project.technology}</p>
 							<div className="overlayLinks">
-								<a href={project.liveLink} target="_blank">Live Link</a>
-								<a href={project.gitLink} target="_blank">GitHub Link</a>
+								<a className="overlayLink" href={project.liveLink} target="_blank">Live Link</a>
+								<a  className="overlayLink" href={project.gitLink} target="_blank">GitHub Link</a>
 							</div>
 						</div>
 					</div>

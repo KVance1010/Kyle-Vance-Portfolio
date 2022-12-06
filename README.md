@@ -169,6 +169,6 @@ Kyle Vance
 
 If you have any questions regarding this project, please reach me by email at vanceofalifetime@protonmail.com
 
-[Live Link]()
+[Live Link](https://kvance1010.github.io/kyle-vance-portfolio/#about)
 
 [LinkedIn](https://www.linkedin.com/in/kyle-s-vance/)

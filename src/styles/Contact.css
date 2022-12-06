@@ -31,15 +31,16 @@
 	justify-content: space-between;
 }
 
-input {
+.input {
 	background: var(--main-background-color);
 	border: none;
 	color: aliceblue;
-	padding: 16px 150px 5px 5px;
+	padding: 10px 10px 5px 5px;
 	font-size: 30px;
 	border-radius: 0.5rem;
+	margin:3px;
 }
-input::placeholder {
+.input::placeholder {
 	color: aliceblue;
 	font-size: 30px;
 }
@@ -97,11 +98,11 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 1288px) {
-	input {
+	.input {
 		padding: 10px 90px 2px 2px;
 		font-size: 20px;
 	}
-	input::placeholder {
+	.input::placeholder {
 		font-size: 20px;
 	}
 	.input_group label {
@@ -125,11 +126,11 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 968px) {
-	input {
+	.input {
 		padding: 5px 60px 2px 2px;
 		font-size: 16px;
 	}
-	input::placeholder {
+	.input::placeholder {
 		font-size: 16px;
 	}
 	.input_group label {
@@ -154,12 +155,12 @@ textarea::placeholder {
 		order: 1;
 		width: 50%;
 	}
-	input {
+	.input {
 		margin: 5px;
 		padding: 5px 60px 2px 2px;
 		font-size: 16px;
 	}
-	input::placeholder {
+	.input::placeholder {
 		font-size: 16px;
 	}
 	.input_group label {
@@ -182,12 +183,12 @@ textarea::placeholder {
 	.contactMe img {
 		width: 75%;
 	}
-	input {
+	.input {
 		margin: 5px;
 		padding: 5px 40px 2px 2px;
 		font-size: 16px;
 	}
-	input::placeholder {
+	.input::placeholder {
 		font-size: 16px;
 	}
 	.input_group label {
