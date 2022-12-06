@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "e782b4f420487873451e",
-    "url": "/kyle-vance-portfolio/static/css/main.a60fdae5.chunk.css"
+    "revision": "663f659ce05ff322dd8c",
+    "url": "/kyle-vance-portfolio/static/css/main.28c041bc.chunk.css"
   },
   {
-    "revision": "e782b4f420487873451e",
-    "url": "/kyle-vance-portfolio/static/js/main.f9ac6a6d.chunk.js"
+    "revision": "663f659ce05ff322dd8c",
+    "url": "/kyle-vance-portfolio/static/js/main.4a9a715b.chunk.js"
   },
   {
     "revision": "b872cc7c4ae1cfcaaf71",
     "url": "/kyle-vance-portfolio/static/js/runtime~main.a214efd1.js"
   },
   {
-    "revision": "ad3ac998baa42188d355",
-    "url": "/kyle-vance-portfolio/static/js/2.226d9264.chunk.js"
+    "revision": "3346606bd89bef62f0b9",
+    "url": "/kyle-vance-portfolio/static/js/2.1a7abe40.chunk.js"
   },
   {
     "revision": "c14ab270c7efe8ce8bb0964050cd8fe0",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/kyle-vance-portfolio/static/media/Tech-Blog.85fe3515.gif"
   },
   {
-    "revision": "88c13388e10c528ef3b748b3d2b13410",
+    "revision": "80025d9fd2fe2897f542204794c5b965",
     "url": "/kyle-vance-portfolio/index.html"
   }
 ];
