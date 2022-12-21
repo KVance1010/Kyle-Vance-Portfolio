@@ -1,7 +1,7 @@
 /* Start Contact Information */
 .contactMe {
 	background-color: var(--second-background-color);
-	padding: var(--outside-padding);
+	padding: 3.2%;
 	display: flex;
 }
 .contactMe h2 {

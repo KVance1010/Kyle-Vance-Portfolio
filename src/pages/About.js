@@ -11,7 +11,7 @@ export default function About() {
         <p>
             Hello Everyone! 
 
-            I’m Kyle, a passionate and highly skilled software engineer with hands-on experience developing and
+            I'm Kyle, a passionate and highly skilled software engineer with hands-on experience developing and
             integrating innovative features in multiple systems and applications. I'm known for managing the
             design,
             development, and delivery of superior technology solutions through the creation of high-quality

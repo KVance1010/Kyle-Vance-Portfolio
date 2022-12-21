@@ -2,6 +2,8 @@
 .aboutMe {
 	background-color: var(--second-background-color);
 	display: flex;
+	padding:10px;
+	/* max-height: calc(100vh - 145px); */
 }
 .aboutMe img {
 	margin: var(--outside-padding);

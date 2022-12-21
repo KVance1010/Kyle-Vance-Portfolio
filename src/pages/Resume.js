@@ -45,7 +45,7 @@ export default function Resume() {
 				<ul>
 					<li className="technologies_li">
 						<span className="technologies">FrontEnd:</span><span>  React, HTML, CSS,
-						JavaScript, Graphql, Thymeleaf,{' '}
+						JavaScript, APIs, Thymeleaf,{' '}
 						<abbr title="Simple Object Access Protocol">SOAP</abbr> ,{' '}
 						<abbr title="Representational State Transfer">REST</abbr>, Fetch,
 						JQuery</span> 

@@ -19,7 +19,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 3% var(--outside-padding);
+	padding: 1% var(--outside-padding);
 }
 
 .nav_list li {
@@ -71,7 +71,7 @@ footer ul {
 
 footer li {
 	text-decoration: none;
-	padding: 20px;
+	padding: 10px 20px;
 	list-style-type: none;
 }
 
@@ -85,8 +85,8 @@ footer li {
 
 .svgGit {
 	vertical-align: -0.125em;
-	width: 2em;
-	height: 2em;
+	width: 1.5em;
+	height: 1.5em;
 }
 
 .svgGit:hover {
@@ -95,8 +95,8 @@ footer li {
 
 .svgLinkedIn {
 	vertical-align: -0.125em;
-	width: 2em;
-	height: 2em;
+	width: 1.5em;
+	height: 1.5em;
 }
 
 .svgLinkedIn:hover {
@@ -105,7 +105,7 @@ footer li {
 .medium {
 	font-weight: bold;
 	color: white;
-	font-size: 54px;
+	font-size: 40px;
 }
 
 @media screen and (max-width: 825px) {

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { checkPhoneNumber, validateEmail } from '../utils/helpers';
 import contactImg from '../assets/contact-img-sq.jpg';
 import '../styles/Contact.css';
 import sWal from 'sweetalert';
+import emailjs from '@emailjs/browser';
+require('dotenv').config();
 
 export default function Contact() {
 	const [email, setEmail] = useState('');
@@ -10,31 +12,39 @@ export default function Contact() {
 	const [project, setProject] = useState('');
 	const [phoneNumber, setPhoneNumber] = useState('');
 	const [errorMessage, setErrorMessage] = useState('');
+	const form = useRef();
 
 	const handleKeyUp = (e) => {
 		const inputType = e.target.name;
 		const inputValue = e.target.value;
 		if (inputType === 'email') {
-			if(!inputValue) {setErrorMessage('Email required')}
-			else{
+			if (!inputValue) {
+				setErrorMessage('Email required');
+			} else {
 				setErrorMessage('');
 			}
 		} else if (inputType === 'userName') {
-			if(!inputValue) {setErrorMessage('Name required')}
-			else{
+			if (!inputValue) {
+				setErrorMessage('Name required');
+			} else {
 				setErrorMessage('');
 			}
 		} else if (inputType === 'phoneNumber') {
-			if(!inputValue) {setErrorMessage('Phone number required')}else{
+			if (!inputValue) {
+				setErrorMessage('Phone number required');
+			} else {
 				setErrorMessage('');
 			}
-		} else if (inputType === 'project'){
-			if(!inputValue) {setErrorMessage('Please enter a brief message and the best time to reach you.')}
-			else{
+		} else if (inputType === 'project') {
+			if (!inputValue) {
+				setErrorMessage(
+					'Please enter a brief message and the best time to reach you.'
+				);
+			} else {
 				setErrorMessage('');
 			}
 		}
-	}
+	};
 
 	const handleInputChange = (e) => {
 		const { target } = e;
@@ -71,13 +81,34 @@ export default function Contact() {
 			return;
 		}
 		if (!userName) {
-			setErrorMessage(
-				`Please enter your name.`
-			);
+			setErrorMessage(`Please enter your name.`);
 			return;
 		}
 
-		sWal("message sent!", "Thank you for contacting me. I will respond to your message in the next 24 hours to 48 hours to your request.", "success");
+		emailjs
+			.sendForm(
+				// process.env.SERVICE_ID,
+				// process.env.TEMPLATE_ID,
+				// form.current,
+				// process.env.PUBLIC_KEY
+				'service_em3ooaz',
+				'template_7oev50g',
+				form.current,
+				'-n9zQyh3kcGrueZTN'
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+					sWal(
+						'message sent!',
+						'Thank you for contacting me. I will respond to your message in the next 24 hours to 48 hours to your request.',
+						'success'
+					);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 
 		setUserName('');
 		setProject('');
@@ -87,7 +118,7 @@ export default function Contact() {
 
 	return (
 		<section className="contactMe">
-			<form className="contact_box" action="mailto:kvance1010@protonmail.com" method="post">
+			<form className="contact_box" ref={form}>
 				<h2>Contact Me</h2>
 				<div className="input_group">
 					<label className="label">
