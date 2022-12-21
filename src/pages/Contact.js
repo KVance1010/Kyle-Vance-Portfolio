@@ -4,7 +4,6 @@ import contactImg from '../assets/contact-img-sq.jpg';
 import '../styles/Contact.css';
 import sWal from 'sweetalert';
 import emailjs from '@emailjs/browser';
-require('dotenv').config();
 
 export default function Contact() {
 	const [email, setEmail] = useState('');
@@ -87,14 +86,10 @@ export default function Contact() {
 
 		emailjs
 			.sendForm(
-				// process.env.SERVICE_ID,
-				// process.env.TEMPLATE_ID,
-				// form.current,
-				// process.env.PUBLIC_KEY
-				'service_em3ooaz',
-				'template_7oev50g',
+				process.env.REACT_APP_SERVICE_ID,
+				process.env.REACT_APP_TEMPLATE_ID,
 				form.current,
-				'-n9zQyh3kcGrueZTN'
+				process.env.REACT_APP_PUBLIC_KEY
 			)
 			.then(
 				(result) => {

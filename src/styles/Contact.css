@@ -3,6 +3,7 @@
 	background-color: var(--second-background-color);
 	padding: 3.2%;
 	display: flex;
+	min-height: Calc(100vh - 145px);
 }
 .contactMe h2 {
 	color: var(--header-footer-color);

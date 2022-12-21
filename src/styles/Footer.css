@@ -1,0 +1,56 @@
+footer {
+	background-color: var(--header-footer-color);
+	width: 100%;
+}
+footer ul {
+	display: flex;
+	background-color: var(--header-footer-color);
+	justify-content: center;
+	color: var(--contrast-color);
+	font-size: x-large;
+}
+
+footer li {
+	text-decoration: none;
+	padding: 10px 20px;
+	list-style-type: none;
+}
+
+.footer {
+	text-decoration: none;
+}
+.footer:hover {
+	font-weight: bolder;
+	color: var(--second-background-color);
+}
+
+.svgGit {
+	vertical-align: -0.125em;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.svgGit:hover {
+	fill: var(--second-background-color);
+}
+
+.svgLinkedIn {
+	vertical-align: -0.125em;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.svgLinkedIn:hover {
+	fill: var(--second-background-color);
+}
+.medium {
+	font-weight: bold;
+	color: white;
+	font-size: 40px;
+}
+
+@media screen and (max-width: 825px) {
+	footer {
+		font-size: large;
+	}
+}

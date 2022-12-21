@@ -1,12 +1,15 @@
 .resume_container {
 	background-color: var(--second-background-color);
-	/* height: 75vh; */
-	padding: 60px 0px;
+	min-height: Calc(100vh - 145px);
+	padding: 40px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .skill_set {
 	background-color: var(--highlight-color);
-	margin: 0px 5% 60px;
+	margin: 0px 5% 40px;
 	border-radius: 1rem;
 }
 
@@ -48,7 +51,7 @@
 
 .download_Link {
 	background-color: var(--highlight-color);
-	margin: 60px 5% 0px;
+	margin: 40px 5% 0px;
 	border-radius: 1rem;
 	display: flex;
 	justify-content: center;

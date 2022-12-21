@@ -1,0 +1,118 @@
+/* Start header section */
+.header {
+	display: flex;
+	background-color: var(--header-footer-color);
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 1% var(--outside-padding);
+}
+
+.nav_list li {
+	display: inline;
+}
+
+.nav_item {
+	padding: 10px;
+	font-size: x-large;
+	text-decoration: none;
+}
+
+.nav_link:hover {
+	font-weight: bolder;
+	color: var(--second-background-color);
+}
+.active {
+	font-weight: bolder;
+	color: var(--second-background-color);
+}
+
+.logo_container {
+	color: var(--contrast-color);
+	text-decoration: none;
+	font-size: xxx-large;
+	font-weight: 900;
+	transition: text-shadow 1s;
+}
+
+.logo_container:hover {
+	text-shadow: 1px 1px 5px black, 0 0 0.1em white, 0 0 0.5em white;
+	color: var(--main-background-color);
+	color: black;
+}
+/* .hamburger {
+	display: none;
+	cursor: pointer;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--main-font);
+} */
+
+@media screen and (max-width: 825px) {
+	.nav_item {
+		font-size: 16px;
+		margin: 0px;
+	} 
+}
+
+@media screen and (max-width: 686px) {
+	.nav_item {
+		font-size: 12px;
+		margin: 0px;
+	}
+	.logo_container {
+		font-size: x-large;
+	}
+    /* .hamburger {
+		display: block;
+		color: var(--main-font);
+	}
+
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav_list {
+		display: none;
+	}
+
+	.navbar_nav2 {
+		position: fixed;
+		z-index: 3;
+		left: 80%;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.nav_link {
+		background-color: var(--header-footer-color);
+		font-size: 16px;
+		padding: 15px 20px;
+		margin: 0px;
+		border: 1px solid black;
+	} */
+}
+
+@media screen and (max-width: 390px) {
+	.nav_list li {
+		display: flex;
+	}
+	.nav_item {
+		margin-bottom: 3px;
+		font-size: 16px;
+	}
+}
