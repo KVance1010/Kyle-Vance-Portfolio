@@ -1,9 +1,9 @@
 /* Start Contact Information */
 .contactMe {
 	background-color: var(--second-background-color);
-	padding: 3.2%;
+	padding: 30px;
 	display: flex;
-	min-height: Calc(100vh - 145px);
+	min-height: Calc(100vh - 160px);
 }
 .contactMe h2 {
 	color: var(--header-footer-color);
@@ -14,7 +14,7 @@
 	background-color: var(--highlight-color);
 	flex-direction: column;
 	width: 100%;
-	margin-right: var(--outside-padding);
+	margin-right: 30px;
 	padding: 1% 2% 2% 2%;
 	justify-content: space-around;
 	display: flex;
@@ -66,6 +66,8 @@ textarea::placeholder {
 
 .contactMe img {
 	max-width: 40%;
+	min-width: 559px;
+	min-height: 664;
 	border-radius: 0.5rem;
 }
 
@@ -98,7 +100,7 @@ textarea::placeholder {
 	color:blue;
 }
 
-@media screen and (max-width: 1288px) {
+@media screen and (max-width: 1388px) {
 	.input {
 		padding: 10px 90px 2px 2px;
 		font-size: 20px;
@@ -113,9 +115,15 @@ textarea::placeholder {
 		padding: 16px 100px 60px 5px;
 		font-size: 20px;
 	}
+	.contactMe img {
+		max-width: 80%;
+		min-width: 359px;
+		border-radius: 0.5rem;
+	}
+
 }
 
-@media screen and (max-width: 1048px) {
+@media screen and (max-width: 1148px) {
 	.contactMe h2 {
 		font-size: 40px;
 	}
@@ -141,21 +149,25 @@ textarea::placeholder {
 		padding: 9px 70px 40px 5px;
 		font-size: 16px;
 	}
-}
-
-@media screen and (max-width: 600px) {
-	.contactMe {
-		flex-wrap: wrap;
-		gap: 20px;
-		justify-content: center;
-	}
 	.contact_box {
 		order: 2;
 	}
 	.contactMe img {
 		order: 1;
-		width: 50%;
+		width: 100%;
 	}
+	.contactMe form {
+		margin-right: 0;
+		width: 80%;
+	}
+	.contactMe {
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
 	.input {
 		margin: 5px;
 		padding: 5px 60px 2px 2px;
@@ -171,9 +183,12 @@ textarea::placeholder {
 		padding: 9px 70px 40px 5px;
 		font-size: 16px;
 	}
+	.aTag {
+		font-size: 16px;
+	}
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 550px) {
 	.contactMe {
 		gap: 10px;
 	}
@@ -186,7 +201,7 @@ textarea::placeholder {
 	}
 	.input {
 		margin: 5px;
-		padding: 5px 40px 2px 2px;
+		padding: 5px 20px 2px 2px;
 		font-size: 16px;
 	}
 	.input::placeholder {
@@ -202,5 +217,16 @@ textarea::placeholder {
 	.contactMe button {
 		font-size: 20px;
 		width: 30%;
+	}
+}
+@media screen and (max-width: 490px) {
+	.label {
+		display: flex;
+		flex-direction: column;
+	}
+	.contactMe img {
+		width: 80%;
+		min-width: 0;
+		min-height: 0;
 	}
 }

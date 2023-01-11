@@ -10,8 +10,7 @@ export default function Resume() {
 				<div className="skill_list">
 					<ul>
 						<li className="skill_li">
-							♦ <abbr title="MongoDb Express React Node">MERN</abbr>/
-							<abbr title="MongoDb Express Angular Node">MEAN</abbr> Development
+							♦ <abbr title="MongoDb Express React Node">MERN</abbr>
 						</li>
 						<li className="skill_li">
 							♦ Java / Java <abbr title="Enterprise Edition">EE</abbr>{' '}
@@ -40,7 +39,7 @@ export default function Resume() {
 				</div>
 			</div>
 
-			<div className="technologies_container">
+			<div className="technologies_container ">
 				<h3>Skill Set</h3>
 				<ul>
 					<li className="technologies_li">

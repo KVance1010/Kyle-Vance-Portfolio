@@ -2,20 +2,23 @@
 .aboutMe {
 	background-color: var(--second-background-color);
 	display: flex;
-	padding:10px;
-	min-height: Calc(100vh - 145px);
+	min-height: Calc(100vh - 160px);
 }
+
 .aboutMe img {
-	margin: var(--outside-padding);
-	max-width: 20%;
+	margin: var(--outside-padding) ;
+	max-width: 380px;
+	max-height: 560px;
 	border-radius: 0.5rem;
 }
+
 .about_me_content {
 	display: inline-block;
 	margin: var(--outside-padding);
 	color: var(--header-footer-color);
 	font-size: large;
 }
+
 .aboutMe h4 {
 	margin: 10px 0px;
 	font-size: 25px;
@@ -32,11 +35,11 @@
 }
 
 @media screen and (max-width: 968px) {
-	#aboutMe {
+	.aboutMe {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	#aboutMe img {
+	.aboutMe img {
 		max-width: 50%;
 	}
 }
