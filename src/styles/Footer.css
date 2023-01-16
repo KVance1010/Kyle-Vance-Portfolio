@@ -5,7 +5,7 @@ footer {
 }
 footer ul {
 	display: flex;
-	background-color: var(--header-footer-color);
+	/* background-color: var(--header-footer-color); */
 	justify-content: center;
 	color: var(--contrast-color);
 	font-size: x-large;
