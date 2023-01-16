@@ -1,5 +1,5 @@
 .resume_container {
-	background-color: var(--second-background-color);
+	background-color: var(--main-background-color);
 	min-height: Calc(100vh - 160px);
 	padding: 30px 0px;
 	display: flex;

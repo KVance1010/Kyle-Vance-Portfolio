@@ -1,32 +1,9 @@
-/* :root {
-	--main-background-color: #808080;
-	--header-footer-color: #542344;
-	--contrast-color: #d9d9d9;
-	--highlight-color: #bfd1e5;
-	--second-background-color: #d8bfaa;
-	--outside-padding: 5%;
-} */
-/* :root {
-	--header-footer-color: #2c5f82;
-	--contrast-color: #e35d18;
-	--outside-padding: 5%;
-	--main-background-color: #2c827a;
-	--highlight-color: #bfd1e5;
-	--second-background-color: #3f89bb;
-	--second-background-color: #542344;
-
-} */
-
-/* :root {
-	--header-footer-color: #234433;
-} */
-
 :root {
-	/* --main-background-color: #f7f3f3; */
-	--header-footer-color: #0000003b;
-	--contrast-color: #d9d9d9;
-	--highlight-color: #bfd1e5;
-	--second-background-color: rgb(192, 192, 27);
+	--main-background-color: #4a4a4a;
+	--header-footer-color: #0000007c;
+	--font-color: #ffffff;
+	--contrast-color: #bfd1e5;
+	--highlight-color: rgb(255, 255, 0);
 	--outside-padding: 5%;
 }
 * {

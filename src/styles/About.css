@@ -1,8 +1,10 @@
 /* Start About Me Section */
 .aboutMe {
-	background-color: var(--second-background-color);
+	background-color:var(--main-background-color);
 	display: flex;
-	min-height: Calc(100vh - 160px);
+	height:100%;
+	align-items: center;
+	padding: 85px 0;
 }
 
 .aboutMe img {
@@ -15,7 +17,7 @@
 .about_me_content {
 	display: inline-block;
 	margin: var(--outside-padding);
-	color: var(--header-footer-color);
+	color: var(--font-color);
 	font-size: large;
 }
 
