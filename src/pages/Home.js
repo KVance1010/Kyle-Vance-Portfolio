@@ -12,7 +12,6 @@ export default function Home({ currentPage, handlePageChange }) {
 				<Link
 					to="/contact"
 					onClick={() => handlePageChange('Contact')}
-					className={currentPage === 'Contact' ? 'nav_link active' : 'nav_link'}
 				>
 					<button>Contact Me!</button>
 				</Link>
