@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "10ede65267f4e7c0901e",
-    "url": "/kyle-vance-portfolio/static/css/main.3386be2a.chunk.css"
+    "revision": "f50e76f7d7eb6f518024",
+    "url": "/kyle-vance-portfolio/static/css/main.91730a81.chunk.css"
   },
   {
-    "revision": "10ede65267f4e7c0901e",
-    "url": "/kyle-vance-portfolio/static/js/main.903a70cc.chunk.js"
+    "revision": "f50e76f7d7eb6f518024",
+    "url": "/kyle-vance-portfolio/static/js/main.69e3a34a.chunk.js"
   },
   {
     "revision": "b872cc7c4ae1cfcaaf71",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/kyle-vance-portfolio/static/media/Tech-Blog.85fe3515.gif"
   },
   {
-    "revision": "458e627e5547e34a37476df3b384f6b2",
+    "revision": "3b4727606cea8fa7b8eb21c0a30c7036",
     "url": "/kyle-vance-portfolio/index.html"
   }
 ];
