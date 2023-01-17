@@ -3,7 +3,8 @@
 	--header-footer-color: #0000007c;
 	--font-color: #ffffff;
 	--contrast-color: #bfd1e5;
-	--highlight-color: rgb(255, 255, 0);
+	/* --highlight-color: #ccbc30; */
+	--highlight-color: #c9c46f;
 	--outside-padding: 5%;
 }
 * {

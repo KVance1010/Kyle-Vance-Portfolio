@@ -1,27 +1,30 @@
 .resume_container {
 	background-color: var(--main-background-color);
-	min-height: Calc(100vh - 160px);
-	padding: 30px 0px;
+	min-height: 100vh;
 	display: flex;
+	height: 100%;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	gap:30px;
+	padding: 80px 0;
 }
 
 .skill_set {
-	background-color: var(--highlight-color);
-	margin: 0px 5% 30px;
+	background-color: var(--header-footer-color);
+	margin: 40px 5% 0;
 	border-radius: 1rem;
+	color: var(--font-color);
 }
 
 .skill_set h3 {
 	font-size: 30px;
-	padding: 20px 20px 0 20px;
+	padding: 20px 40px 0px;
 }
 
 .skill_list {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px;
+	padding: 20px 40px 0;
 }
 .skill_li {
 	margin-bottom: 20px;
@@ -33,14 +36,15 @@
 }
 
 .technologies_container {
-	background-color: var(--highlight-color);
+	/* background-color: var(--main-background-color); */
+	background-color: var(--header-footer-color);
 	margin: 0px 5%;
 	border-radius: 1rem;
+	color: var(--font-color);
 }
 .technologies_container h3 {
 	font-size: 30px;
-	padding: 20px 20px 0 20px;
-	margin-bottom: 20px;
+	padding: 20px 40px 20px;
 }
 
 .technologies {
@@ -48,21 +52,22 @@
 	font-weight: 500;
 }
 .technologies_li {
-	margin-left: 20px;
+	margin-left: 40px;
     padding-bottom: 20px;
     font-size: 25px;
 }
 
 .download_Link {
-	background-color: var(--highlight-color);
-	margin: 30px 5% 0px;
+	background-color: var(--header-footer-color);
+	margin: 0px 5% 0px;
 	border-radius: 1rem;
 	display: flex;
 	justify-content: center;
+	/* color: var(--font-color); */
 }
 
 .download_aTag {
-	color: black;
+	color: var(--font-color);
 	font-size: 40px;
 	font-weight: bold;
 	margin: 20px;
@@ -70,9 +75,9 @@
 }
 
 .download_aTag:hover {
-	text-shadow: 1px 1px 5px black, 0 0 0.1em rgb(5, 5, 5), 0 0 0.5em black;
+	text-shadow: 1px 1px 1px var(--highlight-color), 0 0 0.1em #ff9d00, 0 0 0.5em var(--highlight-color);
 	color: var(--main-background-color);
-	color: white;
+	color: var(--highlight-color);
 }
 
 @media screen and (max-width: 900px) {
