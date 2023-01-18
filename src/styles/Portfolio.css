@@ -1,8 +1,9 @@
 /* Start Portfolio Section */
 .portfolio {
 	background: var(--main-background-color);
-	padding: 50px var(--outside-padding);
-	color: #f0f8ff;
+	padding: 120px var(--outside-padding);
+	color: var(--font-color);
+	align-items: center;
 }
 
 .portfolio h2 {
@@ -11,7 +12,7 @@
 	font-size: xxx-large;
 }
 
-.project_group_portfolio {
+.projectGroupPortfolio {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 80px;
@@ -33,7 +34,7 @@
 .projects .project_box {
 	position: absolute;
 	z-index: 1;
-	background-color: var(--header-footer-color);
+	background-color: black;
 	margin-top: -87px;
 	padding: 30px;
 	border-radius: 0px 0.5rem 0px 0.5rem;
@@ -49,59 +50,63 @@
 
 .overlay {
 	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
+	top: 0;
+	left: 0;
+	width: 100%;
 	z-index: 2;
 	height: 100%;
 	border-radius: 0.5rem;
 	opacity: 0;
 	color: white;
 	background-color: #000000dd;
-	line-height:30px;
+	line-height: 30px;
 }
 .overlay:hover {
 	opacity: 1;
 }
 .overlayLink:hover {
-	color:red;
+	color: #3f89bb;
 }
 
 .overlayText {
 	font-size: 20px;
-	padding: 10px;
+	padding: 40px;
+	font-weight: bolder;
 }
 
 .overlayTitle {
+	color: var(--contrast-color);
 	font-weight: bolder;
 	font-size: larger;
 }
 
-.overlayLinks{
+.overlayLinks {
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-evenly;
 	font-size: xx-large;
 	font-weight: bold;
 }
+.overlayLinksPhone {
+	display: none;
+}
 
 @media screen and (max-width: 1800px) {
 	.overlay {
-		line-height:25px;
+		line-height: 25px;
 	}
 	.overlayText {
 		font-size: 16px;
-		padding: 5px;
 	}
 	.overlayTitle {
 		font-weight: bold;
 		font-size: 20px;
 	}
-	.overlayLinks{
+	.overlayLinks {
 		margin-top: 20px;
 		font-size: large;
 	}
-	.project_group_portfolio {
+	.projectGroupPortfolio {
 		justify-content: center;
 	}
 }
@@ -122,23 +127,36 @@
 		min-width: 528px;
 		min-height: 350px;
 	}
+	.overlayText {
+		padding: 20px;
+	}
 }
 
 @media screen and (max-width: 578px) {
 	.projects .project_box {
-		margin-top: -23px;
-		padding: 5px;
+		margin-top: -37px;
+		padding: 10px;
 	}
-
 	.overlayTitle {
-		font-size: 10px;
+		font-size: 16px;
+		padding: 0px;
 	}
 	.projects p {
-		margin-top: 6px;
+		margin-top: 3px;
 		font-size: 10px;
 	}
 	.projects {
-		min-width: 328px;
+		min-width: 345px;
 		min-height: 265px;
+	}
+	.overlayLinks {
+		display: none;
+	}
+	.overlayLinksPhone {
+		margin: 30px;
+		display: flex;
+		justify-content: space-evenly;
+		font-weight: bold;
+		font-size: large;
 	}
 }

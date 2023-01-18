@@ -1,31 +1,41 @@
 /* Start Contact Information */
 .contactMe {
-	background-color: var(--second-background-color);
-	padding: 30px;
+	background-color: var(--main-background-color);
 	display: flex;
-	min-height: Calc(100vh - 160px);
+	min-height: 100vh;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 140px 5%;
 }
+
 .contactMe h2 {
-	color: var(--header-footer-color);
+	color: var(--font-color);
 	font-weight: bolder;
 	font-size: 50px;
 }
+
 .contactMe form {
-	background-color: var(--highlight-color);
+	background-color: var(--header-footer-color);
 	flex-direction: column;
-	width: 100%;
-	margin-right: 30px;
-	padding: 1% 2% 2% 2%;
+	margin-right: 60px;
+	padding: 40px 40px;
 	justify-content: space-around;
 	display: flex;
 	border-radius: 1rem;
+	width: 100%;
+	/* height: 100%; */
+	height: 575px;
 }
 
 .input_group {
 	display: flex;
 	width: 100%;
+	color: var(--font-color);
+	margin-top: 20px;
 	justify-content: space-between;
 }
+
 .label {
 	display: flex;
 	width: 100%;
@@ -35,28 +45,27 @@
 .input {
 	background: var(--main-background-color);
 	border: none;
-	color: aliceblue;
+	color: var(--font-color);
 	padding: 10px 10px 5px 5px;
 	font-size: 30px;
 	border-radius: 0.5rem;
-	margin:3px;
+	margin: 3px;
 }
+
 .input::placeholder {
-	color: aliceblue;
 	font-size: 30px;
 }
 
 textarea {
 	background: var(--main-background-color);
 	border: none;
-	color: aliceblue;
 	padding: 16px 178px 100px 5px;
 	font-size: 30px;
 	border-radius: 0.5rem;
 }
 
 textarea::placeholder {
-	color: aliceblue;
+	color: var(--font-color);
 }
 
 .input_group label {
@@ -66,19 +75,20 @@ textarea::placeholder {
 
 .contactMe img {
 	max-width: 40%;
-	min-width: 559px;
-	min-height: 664;
+	block-size: 575px;
+	min-width: 575px;
+	min-height: 500px;
 	border-radius: 0.5rem;
 }
 
-.error-text{
+.error-text {
 	margin-top: 20px;
 }
 
 .contactMe button {
 	margin-top: 20px;
 	background: var(--contrast-color);
-	color: var(--header-footer-color);
+	color: black;
 	border-radius: 0.5rem;
 	font-size: 30px;
 	width: 30%;
@@ -86,18 +96,17 @@ textarea::placeholder {
 
 .contactMe button:hover,
 .contactMe button:focus {
-	background-color: var(--header-footer-color);
-	color: var(--contrast-color);
+	background-color: var(--highlight-color);
 }
 
 .aTag {
-	padding-top:20px;
-	color: black;
+	padding-top: 20px;
+	color: var(--font-color);
 	font-size: 25px;
 }
 
-.aTag a:hover{
-	color:blue;
+.aTag a:hover {
+	color: var(--highlight-color);
 }
 
 @media screen and (max-width: 1388px) {
@@ -117,13 +126,12 @@ textarea::placeholder {
 	}
 	.contactMe img {
 		max-width: 80%;
-		min-width: 359px;
+		/* min-width: 359px; */
 		border-radius: 0.5rem;
 	}
-
 }
 
-@media screen and (max-width: 1148px) {
+@media screen and (max-width: 1350px) {
 	.contactMe h2 {
 		font-size: 40px;
 	}
@@ -132,9 +140,6 @@ textarea::placeholder {
 		width: 100%;
 		justify-content: space-between;
 	}
-}
-
-@media screen and (max-width: 968px) {
 	.input {
 		padding: 5px 60px 2px 2px;
 		font-size: 16px;
@@ -154,7 +159,7 @@ textarea::placeholder {
 	}
 	.contactMe img {
 		order: 1;
-		width: 100%;
+		width: 80%;
 	}
 	.contactMe form {
 		margin-right: 0;
@@ -162,7 +167,7 @@ textarea::placeholder {
 	}
 	.contactMe {
 		flex-wrap: wrap;
-		gap: 20px;
+		gap: 60px;
 		justify-content: center;
 	}
 }
@@ -190,7 +195,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 550px) {
 	.contactMe {
-		gap: 10px;
+		gap: 40px;
 	}
 	.contactMe h2 {
 		font-size: 30px;
