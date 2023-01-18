@@ -25,7 +25,8 @@ export default function About() {
 					second to none. I am also a proactive self-starter, recognized for
 					initiating improvements to increase system stability and staff
 					productivity. 
-          {/* I am confident that my wide range of knowledge and talents will allow me to contribute to the success of your company. While others take
+           I am confident that my wide range of knowledge and talents will allow me to contribute to the success of your company.
+          {/* While others take
 					pride in meeting all standards set before them, my passion is for
 					delivering service and leadership that goes beyond organizational
 					expectations. Connect with me today or send me an email at
