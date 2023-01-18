@@ -1,5 +1,5 @@
 {
-  "main.css": "/kyle-vance-portfolio/static/css/main.29567518.chunk.css",
+  "main.css": "/kyle-vance-portfolio/static/css/main.71a8f612.chunk.css",
   "main.js": "/kyle-vance-portfolio/static/js/main.18e29fb4.chunk.js",
   "main.js.map": "/kyle-vance-portfolio/static/js/main.18e29fb4.chunk.js.map",
   "runtime~main.js": "/kyle-vance-portfolio/static/js/runtime~main.a214efd1.js",
@@ -7,17 +7,17 @@
   "static/js/2.74199146.chunk.js": "/kyle-vance-portfolio/static/js/2.74199146.chunk.js",
   "static/js/2.74199146.chunk.js.map": "/kyle-vance-portfolio/static/js/2.74199146.chunk.js.map",
   "index.html": "/kyle-vance-portfolio/index.html",
-  "precache-manifest.880905bbaa1ee2e956c909c879d792a0.js": "/kyle-vance-portfolio/precache-manifest.880905bbaa1ee2e956c909c879d792a0.js",
+  "precache-manifest.0df6ed25812feed25d19307826eda5b1.js": "/kyle-vance-portfolio/precache-manifest.0df6ed25812feed25d19307826eda5b1.js",
   "service-worker.js": "/kyle-vance-portfolio/service-worker.js",
-  "static/css/main.29567518.chunk.css.map": "/kyle-vance-portfolio/static/css/main.29567518.chunk.css.map",
+  "static/css/main.71a8f612.chunk.css.map": "/kyle-vance-portfolio/static/css/main.71a8f612.chunk.css.map",
   "static/media/Game-Homepage.gif": "/kyle-vance-portfolio/static/media/Game-Homepage.35671b1f.gif",
   "static/media/JavaScripts_Quiz_Game.gif": "/kyle-vance-portfolio/static/media/JavaScripts_Quiz_Game.d4b8a454.gif",
   "static/media/Kyle_Vance.pdf": "/kyle-vance-portfolio/static/media/Kyle_Vance.d206333d.pdf",
   "static/media/Note_Taker.gif": "/kyle-vance-portfolio/static/media/Note_Taker.cf749fa5.gif",
   "static/media/OuiTravel.gif": "/kyle-vance-portfolio/static/media/OuiTravel.930013fb.gif",
   "static/media/Tech-Blog.gif": "/kyle-vance-portfolio/static/media/Tech-Blog.ea6a6cb6.gif",
-  "static/media/Home.css": "/kyle-vance-portfolio/static/media/background.981ba160.jpg",
   "static/media/contact-img-sq.jpg": "/kyle-vance-portfolio/static/media/contact-img-sq.18a84f41.jpg",
   "static/media/kyle-vance.jpg": "/kyle-vance-portfolio/static/media/kyle-vance.48631861.jpg",
+  "static/media/Home.css": "/kyle-vance-portfolio/static/media/mainBackground.cacc3cd8.jpg",
   "static/media/website-builder-demo.gif": "/kyle-vance-portfolio/static/media/website-builder-demo.87ae8fd4.gif"
 }
