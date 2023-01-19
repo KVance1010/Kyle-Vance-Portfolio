@@ -24,7 +24,6 @@
 	display: flex;
 	border-radius: 1rem;
 	width: 100%;
-	/* height: 100%; */
 	height: 575px;
 }
 
@@ -74,10 +73,9 @@ textarea::placeholder {
 }
 
 .contactMe img {
-	max-width: 40%;
-	block-size: 575px;
+	max-width: 625px;
 	min-width: 575px;
-	min-height: 500px;
+	min-height: 575px;
 	border-radius: 0.5rem;
 }
 
@@ -125,8 +123,6 @@ textarea::placeholder {
 		font-size: 20px;
 	}
 	.contactMe img {
-		max-width: 80%;
-		/* min-width: 359px; */
 		border-radius: 0.5rem;
 	}
 }
@@ -159,7 +155,6 @@ textarea::placeholder {
 	}
 	.contactMe img {
 		order: 1;
-		width: 80%;
 	}
 	.contactMe form {
 		margin-right: 0;
@@ -169,6 +164,12 @@ textarea::placeholder {
 		flex-wrap: wrap;
 		gap: 60px;
 		justify-content: center;
+	}
+}
+@media screen and (min-width: 870px) {
+	.contactMe img {
+		min-width: 375px;
+		min-height: 375px;
 	}
 }
 

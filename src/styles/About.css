@@ -5,7 +5,7 @@
 	height:100%;
 	min-height: 100vh;
 	align-items: center;
-	padding: 80px 0;
+	padding: 140px 0;
 }
 
 .aboutMe img {
@@ -43,15 +43,20 @@
 .aboutMe ul{
 	margin-bottom: 10px;
 }
+
 .skill_set_list_container{
 	display: flex;
-	/* justify-content: ; */
 }
+
 .skill_set_list_container  ul:last-child{
 	margin-left: 300px;
 }
-
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1288px){
+	.skill_set_list_container  ul:last-child{
+		margin-left: 100px;
+	}
+}
+@media screen and (max-width: 1158px) {
 	.aboutMe {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -59,4 +64,20 @@
 	.aboutMe img {
 		max-width: 50%;
 	}
+	.about_me_content {
+		margin: var(--outside-padding);
+		font-size: large;
+	}
+	.skill_set_list_container  ul:last-child{
+		margin-left: 300px;
+	}
+}
+@media screen and (max-width:690px){
+	.skill_set_list_container{
+		flex-direction: column;
+	}
+	.skill_set_list_container  ul:last-child{
+		margin-left: 0px;
+	}
+	
 }
