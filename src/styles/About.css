@@ -5,7 +5,7 @@
 	height:100%;
 	min-height: 100vh;
 	align-items: center;
-	padding: 140px 0;
+	padding: 80px 0;
 }
 
 .aboutMe img {
@@ -51,9 +51,12 @@
 .skill_set_list_container  ul:last-child{
 	margin-left: 300px;
 }
-@media screen and (max-width: 1288px){
+@media screen and (max-width: 1488px){
 	.skill_set_list_container  ul:last-child{
-		margin-left: 100px;
+		margin-left: 150px;
+	}
+	.aboutMe {
+		padding: 150px 0;
 	}
 }
 @media screen and (max-width: 1158px) {

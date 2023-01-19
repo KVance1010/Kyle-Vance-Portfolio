@@ -80,6 +80,7 @@ textarea::placeholder {
 }
 
 .error-text {
+	color: var(--font-color);
 	margin-top: 20px;
 }
 
