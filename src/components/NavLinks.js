@@ -14,15 +14,15 @@ function NavLinks({ currentPage, handlePageChange }) {
 				</Link>
 			</li>
 			<li className="nav_item">
-				<Link
-					to="/projects"
-					onClick={() => handlePageChange('Projects')}
-					className={
-						currentPage === 'Projects' ? 'nav_link active' : 'nav_link'
-					}
-				>
-					Projects
-				</Link>
+					<Link
+						to="/projects"
+						onClick={() => handlePageChange('Projects')}
+						className={
+							currentPage === 'Projects' ? 'nav_link active' : 'nav_link'
+						}
+					>
+						Projects
+					</Link>
 			</li>
 			<li className="nav_item">
 				<Link

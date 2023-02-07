@@ -1,6 +1,7 @@
 /* Start Contact Information */
 .contactMe {
-	background-color: var(--main-background-color);
+	/* background-color: var(--main-background-color); */
+	background-color: #3e3e3e;
 	display: flex;
 	min-height: 100vh;
 	height: 100%;

@@ -3,9 +3,12 @@ import '../styles/Home.css';
 import { Link } from 'react-router-dom';
 import hero from '../assets/mainBackground.jpg';
 import MobileHero from '../assets/background.jpg';
+import About from './About';
+import Contact from './Contact';
 
 export default function Home({ currentPage, handlePageChange }) {
 	return (
+		<>
 		<section className="hero_section">
 			<div className="hero_content">
 				{/* <h1>Building Better Websites</h1>
@@ -27,5 +30,8 @@ export default function Home({ currentPage, handlePageChange }) {
 				alt="Hero Image of a laptop with a small succulent in a white vase and a pink apple smart phone resting on the laptop."
 			/>
 		</section>
+		<About />
+		<Contact />
+		</>
 	);
 }

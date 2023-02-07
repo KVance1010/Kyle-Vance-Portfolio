@@ -38,7 +38,6 @@
 .hero_content {
 	position: absolute;
 	display: flex;
-	/* margin-right: 20px; */
 	padding-right: 5%;
 	flex-direction: column;
 	width: 50%;
@@ -69,7 +68,7 @@
 	padding: 10px;
 	font-size: 30px;
 	border-radius: 0.5em;
-	background-color: #0000007c;
+	background-color:  var(--contrast-color);
 	font-weight: bolder;
 }
 
@@ -123,13 +122,15 @@
 	}
 	.hero_img {
 		display: none;
-	}
-	.mobile_hero_img {
+	} 
+	 .mobile_hero_img {
 		display: block;
 		position: relative;
+		background-color: black;
 		z-index: 0;
 		max-width: 100%;
 		height: 100vh;
+		margin: 0;
 	}
 }
 
