@@ -3,8 +3,8 @@ import '../styles/Home.css';
 import { Link } from 'react-router-dom';
 import hero from '../assets/mainBackground.jpg';
 import MobileHero from '../assets/background.jpg';
-import About from './About';
-import Contact from './Contact';
+// import About from './About';
+// import Contact from './Contact';
 
 export default function Home({ currentPage, handlePageChange }) {
 	return (
@@ -30,8 +30,8 @@ export default function Home({ currentPage, handlePageChange }) {
 				alt="Hero Image of a laptop with a small succulent in a white vase and a pink apple smart phone resting on the laptop."
 			/>
 		</section>
-		<About />
-		<Contact />
+		{/* <About /> */}
+		{/* <Contact /> */}
 		</>
 	);
 }
